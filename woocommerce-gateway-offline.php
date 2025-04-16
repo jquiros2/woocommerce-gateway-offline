@@ -81,7 +81,7 @@ add_action( 'plugins_loaded', 'wc_offline_gateway_init', 11 );
 function wc_offline_gateway_init() {
 
 	class WC_Gateway_Offline extends WC_Payment_Gateway {
-
+                public $instructions;
 		/**
 		 * Constructor for the gateway.
 		 */
